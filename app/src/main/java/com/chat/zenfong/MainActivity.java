@@ -43,14 +43,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        username = getIntent().getStringExtra("Username");
+
         cineGroupChat = (ListView) findViewById(R.id.zen);
         editText = (EditText) findViewById(R.id.fong);
         btnzenfong = (Button) findViewById(R.id.zenfong);
 
         arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,array321);
         cineGroupChat.setAdapter(arrayAdapter);
-
-        requestUserName();
 
         btnzenfong.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,34 +89,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
-
-    }
-
-
-
-
-    private void requestUserName() {
-        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("输入用户名(Enter Username)");
-        final EditText edtUsername = new EditText(this);
-        builder.setView(edtUsername);
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                username = edtUsername.getText().toString();
-            }
-        });
-
-        builder.setNegativeButton("NEIN", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.cancel();
-            }
-        });
-        builder.show();
     }
 }
