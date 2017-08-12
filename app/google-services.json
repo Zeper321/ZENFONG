@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "156624484937",
+    "firebase_url": "https://zenfong-58b29.firebaseio.com",
+    "project_id": "zenfong-58b29",
+    "storage_bucket": "zenfong-58b29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156624484937:android:6cbe243c4377a738",
+        "android_client_info": {
+          "package_name": "com.chat.zenfong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156624484937-i26hgal1lb1nf8uo2iu041h1ld3m8fdc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3SHaYhzx15ogiuBY2nLWpirFJwPld7dI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
